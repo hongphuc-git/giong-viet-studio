@@ -1,0 +1,49 @@
+GIỌNG VIỆT STUDIO — BẢN PORTABLE WINDOWS x64
+
+1. Chép TOÀN BỘ thư mục Giong-Viet-Portable sang máy Windows 10/11 x64.
+2. Giải nén trước khi dùng. Không chạy EXE ngay trong file ZIP.
+3. Đặt thư mục ở nơi có quyền ghi, ví dụ Downloads hoặc ổ D. Không đặt trong Program Files.
+4. Mở Giong-Viet-Studio.exe. Giao diện sẽ mở trong trình duyệt mặc định.
+5. Nhập lời đọc hoặc chọn TXT UTF-8. Xuống dòng trống để chia đoạn.
+6. Dùng giọng MC đi kèm hoặc chọn WAV/MP3/M4A/FLAC/OGG của bạn.
+   Chọn mẫu một người nói rõ, khoảng 5–15 giây; tối đa 30 MB.
+7. Xác nhận quyền dùng giọng mẫu, chỉnh tốc độ/khoảng nghỉ và chọn MP3 hoặc WAV.
+8. Bấm Tạo âm thanh, giữ cửa sổ EXE đang mở trong khi xử lý.
+9. Nghe kết quả; bấm Lưu file hoặc Thư mục. File có sẵn trong outputs.
+10. Để tắt: bấm Dừng nếu đang tạo, sau đó đóng cửa sổ EXE trên thanh tác vụ.
+
+KHÔNG CẦN cài Python, FFmpeg, tài khoản đám mây hay GPU.
+Mô hình được chép sẵn. Bộ tạo giọng dùng chế độ offline và CPU.
+Trình duyệt kết nối địa chỉ 127.0.0.1 trên chính máy, không phải dịch vụ upload.
+Máy cần hỗ trợ tập lệnh CPU mà ONNX Runtime/model yêu cầu. Khuyến nghị RAM 8 GB trở lên.
+Tốc độ tạo và mức giống giọng phụ thuộc máy và mẫu. Không bảo đảm giống 100%.
+Chỉ sử dụng giọng của bạn hoặc giọng đã được chủ thể đồng ý.
+
+PHẠM VI BẢN NÀY
+- Đóng gói từ quy trình VieNeu v3 Turbo ONNX int8 đã dùng cho video MC.
+- Chưa chạy kiểm thử ứng dụng theo yêu cầu của chủ dự án.
+- Bạn cần kiểm tra trên máy nhận; một file EXE riêng lẻ không đủ, phải chép cả thư mục.
+- Không có nút điều chỉnh cảm xúc giả: phong cách đọc chủ yếu đến từ giọng mẫu và dấu câu.
+
+CÁCH BẠN KIỂM TRA
+- Ngắt mạng, mở EXE và tạo một câu ngắn bằng giọng MC có sẵn.
+- Nghe xem có đủ chữ, đúng tiếng và khoảng nghỉ không.
+- Tạo lại bằng giọng mẫu riêng, rồi thử MP3, WAV và nút Dừng.
+- Chép sang thư mục khác/máy Windows x64 khác và lặp lại câu ngắn.
+- Nếu lỗi: gửi file logs tương ứng; nếu không mở được, xem LOI-KHOI-DONG.txt.
+
+DỮ LIỆU
+- outputs: âm thanh đã xuất.
+- work: nội dung, giọng mẫu tùy chọn và WAV thô từng lượt; không tự xóa để bạn khôi phục khi lỗi.
+- logs: nhật ký tạo giọng.
+- voices/MC-mau.wav: giọng mẫu đã dùng trong dự án.
+- models: mô hình sẵn có, không xóa/đổi tên.
+- runtime: Python và thư viện; không di chuyển riêng lẻ.
+- bin: FFmpeg để đổi định dạng và điều chỉnh nhịp/âm lượng.
+
+MÃ NGUỒN & THÀNH PHẦN
+Mã nguồn ứng dụng và hướng dẫn đóng gói nằm trong thư mục source.
+VieNeu 3.8.3; MOSS Audio Tokenizer Nano ONNX; Python 3.13; ONNX Runtime;
+Vue 3; Shadcn-vue Button pattern/Reka UI; motion-v; FFmpeg.
+Các thành phần có giấy phép riêng, giữ nguyên LICENSE/metadata được đóng kèm.
+Giọng mẫu đi kèm là dữ liệu của dự án, không tự suy ra quyền chia sẻ công khai.
